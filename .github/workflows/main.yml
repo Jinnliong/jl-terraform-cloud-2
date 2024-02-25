@@ -19,11 +19,6 @@ jobs:
       ECS_CLUSTER: jinnliong-terraform-ecs                    
       CONTAINER_NAME: ecs-sample
       TASKDEF: ecsdemo
-                                               
-jobs:
-  deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
