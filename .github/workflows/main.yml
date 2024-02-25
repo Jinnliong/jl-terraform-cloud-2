@@ -13,7 +13,7 @@ jobs:
     environment: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
 
     env:            
-      AWS_REGION: ${{ github.ref == 'refs/heads/main' && 'ap-southeast-3' || 'ap-southeast-1' }}
+      AWS_REGION: ${{ github.ref == 'refs/heads/main' && 'ap-northeast-1' || 'ap-southeast-1' }}
       ECR_REPOSITORY: jinnliong-terraform-ecr
       ECS_SERVICE: ecsdemo         
       ECS_CLUSTER: jinnliong-terraform-ecs                    
