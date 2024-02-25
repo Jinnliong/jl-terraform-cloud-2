@@ -10,7 +10,7 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    environment: ${{ github.ref == 'refs/heads/main' ? 'prod' : 'dev' }} # Environment Selection
+    environment: ${{ github.ref == 'refs/heads/main' ? 'main' : 'dev' }} # Environment Selection
 
     env:            
       AWS_DEFAULT_REGION: ${{ github.ref == 'refs/heads/main' ? 'ap-southeast-1' : 'ap-northeast-1' }}  # Dynamic Region
